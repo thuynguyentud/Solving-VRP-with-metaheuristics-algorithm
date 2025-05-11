@@ -1,0 +1,239 @@
+# depslib dependency file v1.0
+1554138178 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\irrxml.cpp
+	"irrXML.h"
+	"irrString.h"
+	"irrArray.h"
+	"fast_atof.h"
+	"CXMLReaderImpl.h"
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\irrxml.h
+	<stdio.h>
+	<irrXML.h>
+	<string>
+	<irrXML.h>
+	<irrXML.h>
+	<irrXML.h>
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\irrstring.h
+	"irrTypes.h"
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\irrtypes.h
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\irrarray.h
+	"irrTypes.h"
+	"heapsort.h"
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\heapsort.h
+	"irrTypes.h"
+
+1553176588 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\fast_atof.h
+	<stdlib.h>
+	<math.h>
+
+1553554565 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\cxmlreaderimpl.h
+	"irrXML.h"
+	"irrString.h"
+	"irrArray.h"
+	"fast_atof.h"
+
+1719187752 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_global.cpp
+	"vrp_pp_global.h"
+	<cmath>
+	<iomanip>
+	<iostream>
+	<fstream>
+
+1719299938 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_global.h
+	<string>
+	<exception>
+	<ostream>
+	<sstream>
+	<typeinfo>
+	<vector>
+	<thread>
+
+1614940369 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_load_item.cpp
+	<iostream>
+	<iomanip>
+	"vrp_pp.h"
+	"vrp_pp_load_item.h"
+
+1719308986 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp.h
+	"vrp_pp_extern.h"
+	"vrp_pp_lp.h"
+	"vrp_pp_plan.h"
+	"vrp_pp_placed_item.h"
+	"vrp_pp_loading_list.h"
+	"vrp_pp_nbh.h"
+	"vrp_pp_osm.h"
+
+1719703367 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_extern.h
+
+1615552901 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_lp.h
+
+1656076406 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_plan.h
+	"vrp_pp_route.h"
+	"vrp_pp_problem.h"
+	"vrp_pp_extern.h"
+
+1618989565 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_route.h
+	"vrp_pp_operation.h"
+
+1618992103 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_operation.h
+	"vrp_pp_global.h"
+	"vrp_pp_loading_list.h"
+	"vrp_pp_used_arc.h"
+
+1614940369 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_loading_list.h
+
+1582662278 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_used_arc.h
+
+1721284964 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_problem.h
+	"vrp_pp_global.h"
+	"vrp_pp_load_item.h"
+	<vector>
+
+1590093439 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_load_item.h
+
+1591372306 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_placed_item.h
+
+1615384681 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_nbh.h
+	"stdafx.h"
+	<string>
+	<iostream>
+	"vrp_pp_extern.h"
+	"lp_lib.h"
+
+1720268773 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_osm.h
+	<string>
+	"vrp_pp_extern.h"
+	"libpq-fe.h"
+
+1721486728 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_loading_list.cpp
+	<iostream>
+	"vrp_pp_operation.h"
+	"vrp_pp_loading_list.h"
+	"vrp_pp_placed_item.h"
+	"vrp_pp_problem.h"
+
+1615555778 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_lp.cpp
+	"vrp_pp_global.h"
+	"vrp_pp_lp.h"
+
+1614933749 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_nbh.cpp
+	"stdafx.h"
+	"vrp_pp_nbh.h"
+	<string>
+	<iostream>
+	"vrp_pp.h"
+
+1718793259 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_operation.cpp
+	<iostream>
+	"vrp_pp_operation.h"
+	"vrp_pp_route.h"
+	"vrp_pp_loading_list.h"
+	"pugixml.hpp"
+
+1720518310 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_osm.cpp
+	<iostream>
+	<iomanip>
+	"vrp_pp_problem.h"
+	"vrp_pp_extern.h"
+	"vrp_pp_osm.h"
+	"libpq-fe.h"
+
+1591551234 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_placed_item.cpp
+	<iostream>
+	"vrp_pp_placed_item.h"
+
+1721551385 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_plan.cpp
+	"vrp_pp_plan.h"
+	<vector>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<vector>
+	<cmath>
+	"vrp_pp_nbh.h"
+	<iomanip>
+	<cstring>
+	<stdlib.h>
+	"irrXML.h"
+	"vrp_pp_extern.h"
+	"vrp_pp_lp.h"
+	"lp_lib.h"
+	"vrp_pp_osm.h"
+
+1720375023 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_problem.cpp
+	<iostream>
+	<iomanip>
+	<math.h>
+	<string.h>
+	"irrXML.h"
+	"vrp_pp_load_item.h"
+	"vrp_pp_problem.h"
+	"vrp_pp_operation.h"
+	"pugixml.hpp"
+
+1721555789 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_route.cpp
+	"vrp_pp_plan.h"
+	"vrp_pp_loading_list.h"
+	"vrp_pp_placed_item.h"
+	<iostream>
+	<algorithm>
+	<iomanip>
+
+1582661983 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\vrp_pp_used_arc.cpp
+	<iostream>
+	"vrp_pp_operation.h"
+	"vrp_pp_used_arc.h"
+
+1721550645 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\main.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+	<cstring>
+	<stdlib.h>
+	<ctime>
+	<cstdlib>
+	<string>
+	<iomanip>
+	"vrp_pp.h"
+	"vrp_pp_extern.h"
+
+1718792370 source:d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<sys/stat.h>
+	<stdint.h>
+
+1718792370 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1718792370 d:\5. study at tud\1. sose 23.24\1. decision support in transportation logistics\vrp_pp_project\pugiconfig.hpp
+
+1717671388 c:\program files\postgresql\14\include\libpq-fe.h
+	<stdio.h>
+	"postgres_ext.h"
+
+1717671388 c:\program files\postgresql\14\include\postgres_ext.h
+	"pg_config_ext.h"
+
+1717671388 c:\program files\postgresql\14\include\pg_config_ext.h
+
