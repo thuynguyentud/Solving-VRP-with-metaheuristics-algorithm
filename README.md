@@ -1,7 +1,8 @@
 # Sustainable CVRP Optimization with Large-Scale Road Network Data in C++
 
 I conducted this project during my master's degree, under the supervision of Prof. Dr. Jörn Schönberger, Chair of Transport Services and Logistics at TU Dresden, Germany.
-This project tackles the **Capacitated Vehicle Routing Problem (CVRP)** with a focus on ** minimizing fuel emissions** using **meta-heuristic algorithms in C++**. It handles real-world large-scale road networks (~2.5GB). Solving CVRP with large real-world data is computationally intensive. Exact methods are infeasible due to the **combinatorial search space**. Therefore, the **local search metaheuristics approach** was used in this case.
+
+This project tackles the **Capacitated Vehicle Routing Problem (CVRP)** with a focus on **minimizing fuel emissions** using **meta-heuristic algorithms in C++**. It handles real-world large-scale road networks (~2.5GB). Solving CVRP with large real-world data is computationally intensive. Exact methods are infeasible due to the **combinatorial search space**. Therefore, the **local search metaheuristics approach** was used in this case.
 
 ## 🏙️ Project Context
 
