@@ -5,7 +5,7 @@ This project tackles the **Capacitated Vehicle Routing Problem (CVRP)** with a f
 
 ## 🏙️ Project Context
 
-The project works on solving the problem: a **logistics provider** must deliver goods to **~100 supermarket locations** within the **urban area of Stuttgart, Germany**. The fleet consists of **different vehicle types** (e.g., small, medium, large trucks), each with **distinct fuel consumption characteristics**.
+The project works on solving the problem: a **logistics provider** must deliver goods to **~100 supermarket locations** (hereafter will be called "delivery request") within the **urban area of Stuttgart, Germany**. The fleet consists of **different vehicle types** (e.g., small, medium, large trucks), each with **distinct fuel consumption characteristics**.
 
 The optimization objective is to:
 - **Minimize total fuel consumption**
@@ -45,16 +45,64 @@ The project is structured in **four parts**:
 - This data was stored in a local database using **PostgreSQL** and some extensions ( `hstore`: key-value road metadata,  `postgis`: geospatial data types, and `pgrouting`: shortest path calculation).
 
 ### 4. 📊 Sensitivity Analysis
-- To evaluate the model's performance under different parameter configurations and data input, a batch process runs 405 XML scenario files automatically.
-- Helps evaluate robustness and behavior under different constraints
+To test the algorithm’s performance and **evaluate robustness** across different operating conditions, the project includes a batch run of **405 XML scenario files**. Each scenario varies key model parameters:
+
+| Parameter         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `Seed`      | Controls random behavior of the algorithm (diversification)                |
+| `nbh`        | Size of the neighborhood in local search (exploration extent)              |
+| `P1`, `P2`        | Penalties for exceeding vehicle capacity (weight and volume overloads)     |
+| Fleet Configuration | 5 Different combinations of heterogeneous vehicle types                    |
+
 ![Example of the batch files I created for 405 scenarios](https://github.com/user-attachments/assets/6f6805bc-26c8-4d4d-97b8-d7a23209a227)
 
 ---
 
 # 🧱 Project Results:
 
+After successfully building the C++ code and running the batch process, it returned the solution in the text files. This image is an example of one scenario's initial solutions, in which the code returned the solution that assigned 100 delivery requests to 12 trucks, and the sequences of delivery points in each truck. Besides, the total fuel consumption is around 284 liters with total travel lengths of the whole fleet is ~995km.
+
+![](https://github.com/user-attachments/assets/6a047971-eb8f-4c61-bf6f-fa66dab3b6f8)
+
+The local search metaheuristic algorithm improved upon this initial solution, which decreased the objective function is 262.764 liters.
+
+![](https://github.com/user-attachments/assets/c41cb293-df71-4a0a-9b87-b8155a9cf34a)
+
+Across 405 scenarios, the best-performing configuration was:
+
+| Parameter                         | Value                        |
+|-----------------------------------|------------------------------|
+| **Fleet Used**                    | Fleet 3 (heterogeneous)      |
+| **Vehicles Used**                 | 11                           |
+| **Random Seed (`S`)**             | 24                           |
+| **Penalty Settings (`P1`, `P2`)** | 150 / 250                    |
+| **Neighborhood Size (`nbh_size`)**| 50                           |
+| **Final Objective (Fuel)**        | **84.00 liters**             |
+| **Initial Objective (Fuel)**      | 284.00 liters                |
+| **Improvement**                   | ~70%                         |
+
+The result below illustrates this:
+
+![Image of best solution found](https://github.com/user-attachments/assets/8741a493-9b4a-41b6-81ed-ca61c17e62b6)
+
+📸 This best solution was visualized using [uMap](https://wiki.openstreetmap.org/wiki/UMap/Guide)
 
 ![Visualization of result of this vehicle routing problem](https://github.com/user-attachments/assets/21de2f20-48ee-4108-8a21-9455888d0ed2)
 
+---
 
+## 📄 License
+
+This project is licensed under the **MIT License**, see the file for details.  
+You are free to use, modify, and distribute this code with appropriate credit.
+
+---
+
+## 🤝 Collaboration & Feedback
+
+I'm open to ideas, improvements, and collaborations!  
+Feel free to fork, open an issue, or submit a pull request.
+
+📬 Contact: thuynguyen.scm2022@gmail.com  
+🔗 LinkedIn: [Thu Thuy Nguyen]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/thuynguyen-tudresden/))
 
