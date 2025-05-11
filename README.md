@@ -25,7 +25,35 @@ The project is structured in **four parts**:
 ![Example of 1 xml-based scenario files](https://github.com/user-attachments/assets/bec850db-8cc8-4310-8a41-f303ad7b2f4f)
 
 ### 2. 🧮 Optimization Model
-- The mathematical model for this project is based on the model developed by Kopfer, H.W., Schönberger, J., & Kopfer, H. Reducing greenhouse gas emissions of a heterogeneous vehicle fleet. Flex Serv Manuf J 26, 221–248 (2014),  [https://doi.org/10.1007/s10696-013-9180-9](https://doi.org/10.1007/s10696-013-9180-9). Besides, the fuel consumption for different truck types was also referenced from thia paper.
+- The mathematical model for this project is based on the model developed by Kopfer, H.W., Schönberger, J., & Kopfer, H. Reducing greenhouse gas emissions of a heterogeneous vehicle fleet. Flex Serv Manuf J 26, 221–248 (2014),  [https://doi.org/10.1007/s10696-013-9180-9](https://doi.org/10.1007/s10696-013-9180-9). Besides, the fuel consumption for different truck types was also referenced from this paper.
+This is the Mathematical Model – Emission-Minimizing VRP (EVRP-VC) from the paper:
+
+### 🔢 Objective Function
+---
+Minimize the total fuel consumed by all vehicles on all arcs: ∑ᵢ ∑ⱼ ∑ₖ [ dᵢⱼ × ( aₖ × xᵢⱼₖ + bₖ × qᵢⱼₖ ) ]
+
+Where:
+- `I`: Set of locations (including depot `0`)
+- `K`: Set of vehicle types
+- `dᵢⱼ`: Distance between node `i` and node `j`
+- `aₖ`: Base fuel consumption per km for vehicle `k` (empty load)
+- `bₖ`: Additional fuel consumption per ton per km for vehicle `k`
+- `xᵢⱼₖ ∈ {0,1}`: 1 if vehicle `k` travels from `i` to `j`, 0 otherwise
+- `qᵢⱼₖ ≥ 0`: Payload carried by vehicle `k` on arc (i, j)
+
+subject to constraints:
+
+- **Flow Conservation**: Each vehicle entering a node must also leave it: ∑ᵢ xᵢⱼₖ = ∑ᵢ xⱼᵢₖ  ∀j ∈ I, ∀k ∈ K
+- **Customer Served Once**: ∑ₖ yⱼₖ = 1 ∀j ∈ I \ {0}
+- **Vehicle Starts at Depot**: ∑ⱼ x₀ⱼₖ ≤ 1 ∀k ∈ K
+- **Vehicle Assignment Consistency**: ∑ᵢ xᵢⱼₖ = yⱼₖ  ∀j ∈ I, ∀k ∈ K
+- **Subtour Elimination (MTZ)**: uᵢ - uⱼ + n × xᵢⱼₖ ≤ n - 1  ∀i, j ∈ I \ {0}, ∀k ∈ K
+- **Payload Flow Balance**: ∑ᵢ qᵢⱼₖ - ∑ᵢ qⱼᵢₖ = demandⱼ × yⱼₖ ∀j ∈ I \ {0}, ∀k ∈ K
+- **Flow Only on Used Arcs**: qᵢⱼₖ ≤ Qₖ × xᵢⱼₖ ∀i, j ∈ I, ∀k ∈ K
+- **Payload Non-negativity**: qᵢⱼₖ ≥ 0  ∀i, j ∈ I, ∀k ∈ K
+- **Binary Variables**: xᵢⱼₖ ∈ {0,1}, yᵢₖ ∈ {0,1}
+
+---
   
 - The model code is based on the VRP++ application Version 4.02 by the Chair of Transport Services and Logistics, TU Dresden. You can downnload the application at this [link](https://tu-dresden.de/bu/verkehr/ivw/vbl/software/vrp)
   
