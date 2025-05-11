@@ -104,5 +104,5 @@ I'm open to ideas, improvements, and collaborations!
 Feel free to fork, open an issue, or submit a pull request.
 
 📬 Contact: thuynguyen.scm2022@gmail.com  
-🔗 LinkedIn: [Thu Thuy Nguyen]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/thuynguyen-tudresden/))
+🔗 LinkedIn: [Thu Thuy Nguyen](https://www.linkedin.com/in/thuynguyen-tudresden/)
 
