@@ -120,13 +120,6 @@ The result below illustrates this:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**, see the file for details.  
-You are free to use, modify, and distribute this code with appropriate credit.
-
----
-
 ## 🤝 Collaboration & Feedback
 
 I'm open to ideas, improvements, and collaborations!  
